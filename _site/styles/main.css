@@ -1,110 +1,195 @@
-*{box-sizing: border-box;
+*{
+  box-sizing: border-box;
   padding:0;
   margin: 0;
 }
 body{
-  font-family: sans-serif;
-  background-color: #D2691E;
   line-height: 1.5;
 }
-
-#mind3{
+section{
+  padding:5% 0;
+}
+img{
+  max-width:100%;
+}
+#image3{
   width:200px;
+  margin-left:10%;
+  margin-top:10%;
 }
 nav a{
   color:#FFFAFA;
   text-decoration: none;
   text-transform:uppercase;
-  font-size: 80%;
+  font-size:20px;
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.5px;
   letter-spacing: 1.5px;
-  margin-left:40px;
+  padding:0 2%;
 }
 
 nav a:hover{
-  color:#008B8B;
+  color:rgb(15, 190, 190);
 }
 header{
   background-image: url('../images/bulb.jpg') !important;
   height: 80vh;
 }
 h1,h2{
-  color:#6495ED;
+  color:rgb(129, 137, 151);
   font-family: 'Prosto One', cursive;
   text-align: center;
   letter-spacing: 3px;
-
+  text-transform:capitalize;
 }
-/*Header Styles*/
 h3{
-	color:black;
+  text-transform:capitalize;
+  color:black;
 	text-align:center; 
   text-transform: capitalize;
   margin-bottom: 2%;
+  font-family: 'Raleway', sans-serif;
+}
+.portofolio{ 
+  margin-top:2%;
+}
+/*Header Styles*/
+/*Mobile Nav Styles*/
+/* MOBILE NAV */
+#mobile-navigation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.96);
+}
+#container.mobile-menu-visible #mobile-navigation{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* HELPERS */
+.padding{
+  padding: 40px;
+}
+.margin-top-bottom{
+  margin: 40px 0;
+}
+.round-corners{
+  border-radius: 4px;
+}
+.bg-yellow{
+  background-color: #f1c40f;
+}
+.center{
+  text-align: center;
+}
+.animate{
+  transition: all 172ms ease-out;
+}
+.mob-show{
+  display:none;
 }
 /*About Styles */
 #about_me{
-  background-color: #D2691E;
-  letter-spacing:1px;
+  background-color: rgb(172, 165, 160);
+  letter-spacing:3px;
   text-align: center;
-  padding-top:100px;
-  padding-bottom:60px;
-  font-size: 15px; 
 }
 
 /*Skills styles  and experience styles*/
 
 #my_skills{
-	background-color:#F4A460;
+	background-color:rgb(238, 234, 231);
   text-align: center;
   font-size: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
+
 #my_skills ul{
   text-transform: capitalize;
   text-align: justify;
-  
 }
 .identity{
   text-align: justify;
 }
 .skillDiv{
-  border:1px solid black;
+  height:200px;
+  border:2px solid black;
 }
 ul li{
   list-style-type: none;
 }
 span.list{
   font-weight: bold;
+  margin-bottom:4%;
 }
 /*Footer Styles*/
 footer{
-  background-image:url('../images/sky.jpg');s
-  height:80vh;
-  margin-top: 20px;
+  background-image:url('../images/sky1.jpg');
+  padding:5% 0;
 }
 footer nav a i{
   font-size:35px !important;
-  color:black;
+  color: rgb(67, 73, 82);
   margin-bottom:5%;
 
 }
 footer nav a i:hover{
-  color:#6495ED;
+  color:rgb(148, 166, 196);
+  font-size:35px !important; 
 
+}
+label{
+  text-align:center;
 }
 .button{
   margin-top:30px;
-  background-color:#6495ED;
+  background-color:rgb(67, 73, 82);
   font-size: 30px;
-  width:40vh;
 
 }
 .button:hover{
-  color:#D2691E;
-  padding: -30px -60px;
+  background-color:rgb(129, 137, 151);
 
+}
+.socialNav{
+  padding-top:5%;
+}
+
+/*RESPONSIVE STYLES*/
+@media all and (max-width:940px){
+  .mobile-hide{
+    display:none !important;
+  }
+  .mob-show{
+    display:block;
+  }
+  #about{
+    font-size:12px;
+  }
+  @media all and (max-width:480px){
+    #about_me p{
+      font-size:9px;
+      letter-spacing:0.2;
+      margin: 10px,40px; 
+      text-align: justify;
+      padding:5%;
+       }
+    .skillDiv li {
+      font-size:9px;
+      text-align: center;
+      padding-bottom:-15%; 
+    }
+  .socialNav,a{
+    margin-left: 20px;
+
+
+  }
+}
+  
 }

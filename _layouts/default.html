@@ -6,19 +6,43 @@
   <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
   <title>{{page.title}} </title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://use.fontawesome.com/5d4bc885ca.js"></script>
-
 </head>
 <body>
   <header id="home">
-    <nav class="grid-spaceBetween">
+<!-- mobile nav starts here -->
+<div id="container" class="mob-show">
+        <div class="col-6">
+          
+        </div>
+        <div class="col-6">
+          <nav>
+            <a href="#home" title="Home" class="toggle-mobile-menu">
+              <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+      <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate _xs-12_sm-12">
+          <a class="col-12 center toggle-mobile-menu" href="#home">
+            <i class="fa fa-times" aria-hidden="true"></i>    
+          </a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+      </nav>
+      
+    </div> <!-- #container -->
+<!-- mobile nav ends here -->
+    <nav class="mobile-hide grid-spaceBetween _xs-12_sm-12">
       <!--division for a logo or image-->
       <div classs="col-2">
-        <img src="../images/image3.jpg" id="mind3" alt="a mind image for a logo"/>
+        <img src="../images/image3.jpg" id="image3" alt="a mind image for a logo"/>
       </div>
       <!-- <img src="../images/bulb.jpg" alt="background image"/> -->
       <!--division for a link-->
@@ -30,12 +54,14 @@
       </div>
     </nav>
         <h1>UWAMAHORO NATHALIE</h1>
-        <h2>PORTOFOLIO</h2>
+       <div class="portofolio"> 
+         <h2>PORTOFOLIO</h2>
+      </div>
   </header>
 
   {{content}}
 
-   <footer id="Contact">
+   <footer id="contacts">
    
     <h3>Contact me</h3>
         <!-- add form here-->
@@ -48,15 +74,11 @@
         <textarea name="message" class="col-8_sm-12"></textarea>
         <button class="col-5 button" type="submit">Send</button>
       </form>
-      <nav>
+      <nav class="grid-center socialNav _xs-12_sm-12">
         <!--links for social media-->
-    <a href="http:www.facebook.com"> <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a  href="http:www.gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-  </a>
-  <a  href="http:www.linkedlin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-  </a>
-
+        <a class="col-1" href="http:www.facebook.com"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="col-1" href="http:www.gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a class="col-1" href="http:www.linkedlin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
       </nav>
   </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  

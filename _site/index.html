@@ -6,19 +6,43 @@
   <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
   <title>Nathalie portofolio </title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://use.fontawesome.com/5d4bc885ca.js"></script>
-
 </head>
 <body>
   <header id="home">
-    <nav class="grid-spaceBetween">
+<!-- mobile nav starts here -->
+<div id="container" class="mob-show">
+        <div class="col-6">
+          
+        </div>
+        <div class="col-6">
+          <nav>
+            <a href="#home" title="Home" class="toggle-mobile-menu">
+              <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+      <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate _xs-12_sm-12">
+          <a class="col-12 center toggle-mobile-menu" href="#home">
+            <i class="fa fa-times" aria-hidden="true"></i>    
+          </a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+      </nav>
+      
+    </div> <!-- #container -->
+<!-- mobile nav ends here -->
+    <nav class="mobile-hide grid-spaceBetween _xs-12_sm-12">
       <!--division for a logo or image-->
       <div classs="col-2">
-        <img src="../images/image3.jpg" id="mind3" alt="a mind image for a logo"/>
+        <img src="../images/image3.jpg" id="image3" alt="a mind image for a logo"/>
       </div>
       <!-- <img src="../images/bulb.jpg" alt="background image"/> -->
       <!--division for a link-->
@@ -30,61 +54,57 @@
       </div>
     </nav>
         <h1>UWAMAHORO NATHALIE</h1>
-        <h2>PORTOFOLIO</h2>
+       <div class="portofolio"> 
+         <h2>PORTOFOLIO</h2>
+      </div>
   </header>
 
     <!--this section talk about me-->
   <section id="about_me" class="grid-center">
-    <div class="col-7_xs-12">
+    <div class="col-7_xs-12_sm-12">
       <h3> About me</h3>
       <p class="identity">
-        I am UWAMAHORO NATHALIE 23 years old ,Rwandese lady interested in STEM (SCIENCE TECHNOLOGY ENGINEERING MATHEMATICS. I am a graduate in Electrical  and Electronics Engineering in University of Rwanda College of Science and Technology and i did Computer science in Secondary school.I possess strong personal skills such hardworking ,critical thinking time management. I am a front end developper and i am interested in getting job in front end developper and engineering field and also i am expanding my profesional skills.I did a training about front end development organised by programmers 4 peace.and professional interneship at pfunda tea factory and training called electricity network protection by Institute of Electrical and Electronic Engineers and I attended an East africa young students and professional engineers organised by IEEE in Kampala Uganda.
+        <br>My name is UWAMAHORO NATHALIE, I am 23 year Rwandese lady interested in STEM (SCIENCE TECHNOLOGY ENGINEERING MATHEMATICS). I am a graduate in Electrical and Electronics Engineering from The University of Rwanda. College of Science and Technology. In secondary school I concentrated in Computer science. </br>
+        <br> My skills include, critical thinking, effective time management. I am a front end developper and engineer and constantly looking for new projects.
+        In December 2017 I graduated from Programmers 4 Peace pilot program, where I learned my HTML, CSS and design skills. </br>
+        <br>I have also completed a professional internship at Pfunda tea factory and training known as electricity network protection from the Institute of Electrical and Electronic Engineers.
+        I have also attended an East African young students and professional engineers organised by IEEE in Kampala, Uganda.</br>
         </p>
       </div>
       </section>
       <section id="my_skills">
-         <h3>my skills</h3>
-      <div class="grid-spaceAround">
-          <div class="col-4 skillDiv">
-              <ul class="identity1"><span class="list">Main skills in computer science are:</span>
-                <li>Front End Development</li>
-                <li>c programming</li>
-                <li> networking</li>
-              </ul>
-           </div>
-            <div class="col-4 skillDiv ele">
-              <ul class="identity2"><span class="list">Main skills in electrical are:</span>
-                <li>Electrical machines</li>
-                <li>Electrical instalation</li>
-                <li> power systems protection</li>
-                <li>power systems modelling</li>
-              </ul>
-            </div>
-            </div>
-              <div class="grid-spaceAround">
-                <div class="col-4  skillDiv electro">
-                  <ul class="identity3"><span class="list">Main skills in Electronics are:</span>
-                    <li>Embedded systems</li>
-                    <li>Arduino programming</li>
-                    <li>matlab and proteus</li>
-                  </ul>
-                </div>
-                <div class="col-4 skillDiv perso">
-                  <ul class="identity4"><span class="list">Main Personal skills are:</span>
-                    <li> Hardworking</li>
-                    <li> Time management</li>
-                    <li> Easy Learner</li>
-                    <li> Committed</li>
-                    <li> Creativity and Innovation</li>
-                   </ul> 
-                 </div>
+         <h3>My Skills</h3>
+      <div class="grid_xs-12_sm-12">
+        <div class="col-5">
+          <img src="images/nathalie.JPG" alt="This is a photo of me">
+        </div>
+        <div class="skills col-7 grid-spaceAround _xs-12_sm-12">
+          <div class="skillDiv col-4">
+            <ul class="identity1"><span class="list">Professional Skills</span>
+              <li>Web design</li>
+              <li>c programming</li>
+              <li>Power System Modelling</li>
+              <li>Power System </li>
+              <li>Electrical Design</li>
+            </ul>
           </div>
+          <div class="skillDiv col-4">
+            <ul class="identity4"><span class="list">Personal Skills</span>
+              <li> Hard working</li>
+              <li> Time Management</li>
+              <li> Easy Learner</li>
+              <li> Committed</li>
+              <li> Creativity and Innovation</li>
+            </ul> 
+          </div>
+        </div>
+      </div>
       <!--division for skilss and they will be absolute position with experience-->
     
   </section>
  
 
-   <footer id="Contact">
+   <footer id="contacts">
    
     <h3>Contact me</h3>
         <!-- add form here-->
@@ -97,15 +117,11 @@
         <textarea name="message" class="col-8_sm-12"></textarea>
         <button class="col-5 button" type="submit">Send</button>
       </form>
-      <nav>
+      <nav class="grid-center socialNav _xs-12_sm-12">
         <!--links for social media-->
-    <a href="http:www.facebook.com"> <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a  href="http:www.gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-  </a>
-  <a  href="http:www.linkedlin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-  </a>
-
+        <a class="col-1" href="http:www.facebook.com"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="col-1" href="http:www.gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a class="col-1" href="http:www.linkedlin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
       </nav>
   </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
